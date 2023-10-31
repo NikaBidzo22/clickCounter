@@ -1,0 +1,99 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap');
+
+body {
+    margin: 0px;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(20, 20, 20);
+}
+
+#btn {
+    border: 3px white solid;
+    width: 40%;
+    height: 30%;
+    cursor: pointer;
+    animation: infinite rain 2s;
+    box-shadow: 12px 17px 10px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(20, 20, 20);
+    animation: infinite colored 2s;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    color: white;
+    margin-top: 100px;
+}
+
+@keyframes rain {
+    0% {border: 3px solid rgb(190, 190, 190); color: rgb(194, 194, 194);}
+    50% {border: solid 4px rgb(82, 82, 82); color: rgb(82, 82, 82);}
+    100% {border: 3px solid rgb(194, 194, 194); color: rgb(194, 194, 194);}
+  }
+
+  .countdown {
+    display: flex;
+    margin-top: 70px;
+  }
+
+  .time {
+    font-size: 50px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 4px;
+  }
+
+  .popup {
+    width: 75%;
+    height: 70%;
+    background-color: rgb(82, 82, 82);
+    position: absolute;
+    display: none;
+    border-radius: 5px;
+    top: 100px;
+    flex-direction: column;
+  }
+
+  .result  {
+    color: white;
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+    width: 96%;
+    margin-left: 40px;
+    margin-top: 30px;
+  }
+
+  #play {
+    width: 95%;
+    height: 15%;
+    margin-left: 40px;
+    font-size: 40px;
+    margin-top: 300px;
+  }
+
+  @media screen and (max-width: 428px) {
+        .result {
+            margin-left: 22px;
+            font-size: 20px;
+            width: 85%;
+        }
+
+        #play {
+            margin-top: 50px;
+            width: 85%;
+            margin-left: 22px;
+            margin-top: 140px;
+        }
+
+        #btn {
+            width: 70%;
+        }
+  }
